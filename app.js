@@ -82,7 +82,7 @@ app.delete('/books/:id', (req,res)=>{
         res.status(500).json({error: 'not a valid id'})
     }
 })
-app.patch('books/:id', (req,res)=>{
+app.patch('/books/:id', (req,res)=>{
   
     const updates = req.body
 
