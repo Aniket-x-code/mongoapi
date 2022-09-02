@@ -2,7 +2,7 @@ const express = require("express")
 const {ObjectId}=require('mongodb')
 const { connectToDb, getDb }= require('./db')
 const app = express()
-
+app.use(express.json())
 let db;
 
 // db connection
@@ -50,4 +50,8 @@ app.get('/books/:id', (req,res)=>{
     {
         res.status(500).json({error: 'not a valid id'})
     }
+})
+
+app.post('/books', (req,res)=>{
+
 })
