@@ -6,11 +6,13 @@ const app = express()
 app.use(express.json())
 let db;
 
+const PORT = process.env.PORT || 3000;
+
 // db connection
 connectToDb((err)=>{
     if(!err)
     {   
-    app.listen(3000, ()=>{
+    app.listen(PORT, ()=>{
     console.log('app listening on port 3000');
     })
     }
