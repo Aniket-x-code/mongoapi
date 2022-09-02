@@ -17,6 +17,12 @@ connectToDb((err)=>{
         db = getDb()
 })
 
+app.get("/",(req,res) => {
+    res.status(200).json({
+        "msg":"welcome to mongoapi db by aniket"
+    })
+})
+
 //  routes
 app.get('/books', (req, res)=>{
     let books=[]  //array to store books
