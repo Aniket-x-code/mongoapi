@@ -102,7 +102,7 @@ app.patch('/books/:id', (req,res)=>{
         res.status(200).json(result)
     })
     .catch(err=>{
-        res.status(500).json({error: 'could not update the document'})
+        res.status(500).json({error: 'could not update the document , error occured'})
     })
     }
     else
