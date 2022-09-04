@@ -107,6 +107,6 @@ app.patch('/books/:id', (req,res)=>{
     }
     else
     {
-        res.status(500).json({error: 'not a valid id'})
+        res.status(500).json({error: 'not a valid id entered'})
     }
 })
