@@ -21,7 +21,7 @@ connectToDb((err)=>{
 
 app.get("/",(req,res) => {
     res.status(200).json({
-        "msg":"welcome to mongoapi db by aniket"
+        "msg":"welcome to mongodb api by aniket"
     })
 })
 
